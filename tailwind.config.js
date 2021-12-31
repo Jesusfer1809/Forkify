@@ -371,7 +371,7 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
-      rubik: ["Rubik", "sans-serif"],
+      rubik: ["'Rubik'", "sans-serif"],
       sans: [
         "ui-sans-serif",
         "system-ui",
