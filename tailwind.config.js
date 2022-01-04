@@ -8,9 +8,14 @@ module.exports = {
   darkMode: "media", // or 'class'
   theme: {
     screens: {
+      sz550: "550px",
       sm: "640px",
+      sz700: "700px",
       md: "768px",
+      sz900: "900px",
+      sz920: "920px",
       lg: "1024px",
+
       xl: "1280px",
       "2xl": "1536px",
     },

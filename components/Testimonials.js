@@ -2,7 +2,7 @@ import React from "react";
 
 function Testimonials() {
   return (
-    <div className=" pl-24 pr-8 py-32 bg-omnifood-tint_1">
+    <div className=" pl-24 pr-8 py-28 bg-omnifood-tint_1">
       <div className="grid grid-cols-2 gap-x-20">
         <div>
           <h2 className=" flex flex-col mb-20 ">

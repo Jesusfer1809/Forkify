@@ -2,11 +2,11 @@ import React from "react";
 
 function Features() {
   return (
-    <div className=" px-28 py-16 bg-white">
+    <div className=" px-20 lg:px-28 pt-16 pb-8 xl:pb-16 bg-white">
       <h2 className="block text-sm font-medium text-center text-tg-g_6f6f6f mb-6">
         AS FEATURED IN
       </h2>
-      <div className=" flex justify-around flex-wrap ">
+      <div className=" flex justify-around flex-wrap  gap-8 ">
         <img
           src="./logos/techcrunch.png"
           className=" h-8 invert-[.45] sepia-[.14] saturate-[.12] hue-rotate-[314deg] brightness-[.92] contrast-[.83]"

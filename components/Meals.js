@@ -7,25 +7,25 @@ import Check from "./Check";
 
 function Meals() {
   return (
-    <div className=" px-28 py-16 bg-white">
+    <div className=" px-20 lg:px-20 xl:px-28 py-16 bg-white">
       <h2 className=" flex flex-col text-center ">
-        <span className=" text-omnifood-shade_1 font-medium text-md block mb-3">
+        <span className=" text-omnifood-shade_1 font-medium text-sm xl:text-md block mb-3">
           MEALS
         </span>
-        <span className=" text-tg-g_333 font-semibold text-4xl block mb-28">
+        <span className=" text-tg-g_333 font-semibold text-3xl xl:text-4xl block mb-24 xl:mb-28">
           Omnifood AI chooses from 5,000+ recipes
         </span>
       </h2>
 
-      <div className="grid grid-cols-3 gap-x-16 gap-y-20">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-20">
         <div className=" shadow-omnifood  rounded-lg overflow-hidden">
           <img src="./meals/meal-1.jpg" />
 
-          <div className=" p-10 pb-0 text-tg-g_333">
-            <span className=" text-xs uppercase font-semibold bg-[#51CF66] px-3 py-1 rounded-full inline-block mb-2">
+          <div className="  p-6 xl:p-10 pb-0 text-tg-g_333">
+            <span className=" text-xs uppercase font-semibold bg-[#51CF66] px-3 py-1 rounded-full inline-block mb-3 xl:mb-2">
               Vegetarian
             </span>
-            <h4 className=" font-semibold text-2xl block mb-8 tracking-wide ">
+            <h4 className=" font-semibold text-xl xl:text-2xl block mb-8 tracking-wide ">
               Japanese Gyozas
             </h4>
 
@@ -74,16 +74,16 @@ function Meals() {
         <div className=" shadow-omnifood  rounded-lg overflow-hidden">
           <img src="./meals/meal-2.jpg" />
 
-          <div className=" p-10 pb-0 text-tg-g_333">
-            <span className=" text-xs uppercase font-semibold bg-[#51CF66] px-3 py-1 rounded-full inline-block mb-2 mr-4">
+          <div className=" p-6 xl:p-10 pb-0 text-tg-g_333">
+            <span className=" text-xs uppercase font-semibold bg-[#51CF66] px-3 py-1 rounded-full inline-block mb-3 xl:mb-2 mr-4">
               Vegetarian
             </span>
 
-            <span className=" text-xs uppercase font-semibold bg-[#FFD43B] px-3 py-1 rounded-full inline-block mb-2">
+            <span className=" text-xs uppercase font-semibold bg-[#FFD43B] px-3 py-1 rounded-full inline-block mb-3 xl:mb-2">
               Paleo
             </span>
 
-            <h4 className=" font-semibold text-2xl block mb-8 tracking-wide ">
+            <h4 className=" font-semibold text-xl xl:text-2xl block mb-8 tracking-wide ">
               Avocado Salad
             </h4>
 
@@ -130,7 +130,7 @@ function Meals() {
         </div>
 
         <div>
-          <span className="text-3xl  font-semibold text-tg-g_333 block mb-6">
+          <span className=" text-2xl xl:text-3xl  font-semibold text-tg-g_333 block mb-6">
             Works with any diet:
           </span>
 
