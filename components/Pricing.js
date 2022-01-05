@@ -4,17 +4,17 @@ import Descriptions from "./Descriptions";
 
 function Pricing() {
   return (
-    <div className=" px-28 py-28 bg-white flex flex-col">
+    <div className=" px-8 sz550:px-16 lg:px-20 xl:px-28 py-28 bg-white flex flex-col">
       <h2 className=" flex flex-col mb-20 ">
-        <span className=" text-omnifood-shade_1 font-medium text-md block mb-3">
+        <span className=" text-omnifood-shade_1 font-medium text-xs sm:text-sm xl:text-md block mb-3">
           PRICING
         </span>
-        <span className=" text-tg-g_333 font-bold text-[2.7rem] leading-tight block ">
+        <span className=" text-tg-g_333 font-bold text-2xl sm:text-3xl xl:text-[2.7rem] leading-tight block ">
           Eating well without breaking the bank
         </span>
       </h2>
 
-      <div className="grid grid-cols-2  gap-x-20 w-4/5 self-center">
+      <div className="grid grid-cols-1 sz850:grid-cols-2  gap-x-20 gap-y-20 w-full sz550:w-4/5 sm:w-3/5 sz850:w-full lg:w-4/5 self-center">
         <div className=" border-2 border-omnifood-tint_2 rounded-md p-12">
           <div className="flex flex-col justify-center mb-10">
             <span className="text-omnifood-shade_1 font-medium text-lg block mb-6 text-center">
@@ -111,7 +111,7 @@ function Pricing() {
         </div>
       </div>
 
-      <div className="mt-16 text-center text-tg-g_555 mb-24">
+      <div className="mt-16 text-center text-tg-g_555 mb-24 text-sm sz550:text-base ">
         Prices include all applicable taxes. You can cancel at any time. Both
         plans include the following:
       </div>

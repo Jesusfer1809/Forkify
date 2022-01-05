@@ -9,7 +9,7 @@ function Navbar() {
         <li className=" inline-block ml-8 xl:ml-12">
           <a
             href="#"
-            className=" text-gray-700 font-semibold text-md xl:text-lg tracking-wide hover:text-omnifood-shade_1 transition-all cursor-pointer "
+            className=" text-gray-700 font-semibold text-base xl:text-lg tracking-wide hover:text-omnifood-shade_1 transition-all cursor-pointer "
           >
             How it works
           </a>
@@ -18,7 +18,7 @@ function Navbar() {
         <li className=" inline-block ml-8 xl:ml-12 ">
           <a
             href="#"
-            className=" text-gray-700 font-semibold text-md xl:text-lg tracking-wide hover:text-omnifood-shade_1 transition-all cursor-pointer"
+            className=" text-gray-700 font-semibold text-base xl:text-lg tracking-wide hover:text-omnifood-shade_1 transition-all cursor-pointer"
           >
             Meals
           </a>
@@ -27,7 +27,7 @@ function Navbar() {
         <li className=" inline-block ml-8 xl:ml-12">
           <a
             href="#"
-            className=" text-gray-700 font-semibold text-md xl:text-lg tracking-wide hover:text-omnifood-shade_1 transition-all cursor-pointer"
+            className=" text-gray-700 font-semibold text-base xl:text-lg tracking-wide hover:text-omnifood-shade_1 transition-all cursor-pointer"
           >
             Testimonials
           </a>
@@ -36,7 +36,7 @@ function Navbar() {
         <li className=" inline-block ml-8 xl:ml-12">
           <a
             href="#"
-            className=" text-gray-700 font-semibold text-md xl:text-lg tracking-wide hover:text-omnifood-shade_1 transition-all cursor-pointer"
+            className=" text-gray-700 font-semibold text-base xl:text-lg tracking-wide hover:text-omnifood-shade_1 transition-all cursor-pointer"
           >
             Pricing
           </a>
@@ -45,7 +45,7 @@ function Navbar() {
         <li className=" inline-block ml-8 xl:ml-12">
           <a
             href="#"
-            className=" text-white font-semibold bg-omnifood-primary px-4 py-2 xl:px-5 xl:py-3 rounded-lg text-md xl:text-lg tracking-wide hover:bg-omnifood-shade_1 transition-all"
+            className=" text-white font-semibold bg-omnifood-primary px-4 py-2 xl:px-5 xl:py-3 rounded-lg text-base xl:text-lg tracking-wide hover:bg-omnifood-shade_1 transition-all"
           >
             Try for free
           </a>
