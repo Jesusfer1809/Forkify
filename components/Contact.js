@@ -9,7 +9,7 @@ function Contact() {
             Get your first meal for free!
           </h2>
 
-          <p className="  text-omnifood-shade_2 text-opacity-95 text-base md:text-lg leading-loose block mb-12">
+          <p className=" text-omnifood-shade_2 text-opacity-95 text-base md:text-lg leading-loose block mb-12">
             Healthy, tasty and hassle-free meals are waiting for you. Start
             eating well today. You can cancel or pause anytime. And the first
             meal is on us!
@@ -18,7 +18,7 @@ function Contact() {
           <form className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
             <div>
               <label
-                for="name"
+                htmlFor="name"
                 className=" text-sm md:text-base block mb-2 text-omnifood-shade_2 font-semibold"
               >
                 Full Name
@@ -33,7 +33,7 @@ function Contact() {
 
             <div>
               <label
-                for="email"
+                htmlFor="email"
                 className=" text-sm md:text-base block mb-2 text-omnifood-shade_2 font-semibold"
               >
                 Email address
@@ -48,7 +48,7 @@ function Contact() {
 
             <div>
               <label
-                for="hear"
+                htmlFor="hear"
                 className=" text-sm md:text-base block mb-2 text-omnifood-shade_2 font-semibold"
               >
                 Where did you hear from us?
