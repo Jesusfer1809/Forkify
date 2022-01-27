@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 import DeskLinks from "./DeskLinks";
 import DropMenu from "./dropMenu";
@@ -14,7 +15,9 @@ function Navbar() {
       <DeskLinks />
       <MobileLinks isOpened={isOpened} openMenu={() => setIsOpened(true)} />
 
-      <DropMenu isOpened={isOpened} setIsOpened={setIsOpened} />
+      <AnimatePresence>
+        <DropMenu isOpened={isOpened} setIsOpened={setIsOpened} />
+      </AnimatePresence>
     </div>
   );
 }
