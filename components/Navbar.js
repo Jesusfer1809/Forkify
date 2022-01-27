@@ -9,6 +9,7 @@ function Navbar() {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
+    //uwu
     <div className=" flex  justify-between py-7  px-6  lg:px-8 xl:px-12 items-center bg-omnifood-tint_1">
       <img src="./omnifood-logo.png" className="  h-4 md:h-5  lg:h-6" />
 
