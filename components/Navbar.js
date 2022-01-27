@@ -1,7 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 import DeskLinks from "./DeskLinks";
-import DropMenu from "./dropMenu";
+import DropMenu from "./DropMenu";
 
 import MobileLinks from "./MobileLinks";
 
