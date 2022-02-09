@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     //uwu
-    <div className=" flex  justify-between py-7  px-6  lg:px-8 xl:px-12 items-center bg-omnifood-tint_1">
+    <div className=" flex fixed top-0 left-0 right-0 justify-between  py-4 md:py-6  px-6  lg:px-8 xl:px-12 items-center bg-omnifood-tint_1 z-50">
       <img src="./omnifood-logo.png" className="  h-4 md:h-5  lg:h-6" />
 
       <DeskLinks />

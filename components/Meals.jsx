@@ -7,7 +7,10 @@ import Check from "./Check";
 
 function Meals() {
   return (
-    <div className=" px-8 sz550:px-16 lg:px-20 xl:px-28 py-16 bg-white">
+    <div
+      id="meals"
+      className=" px-8 sz550:px-16 lg:px-20 xl:px-28 py-16 bg-white"
+    >
       <h2 className=" flex flex-col text-center ">
         <span className=" text-omnifood-shade_1 font-medium text-xs sm:text-sm xl:text-md block mb-3">
           MEALS

@@ -1,10 +1,15 @@
 import React from "react";
 import HamburguerButton from "./HamburguerButton";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 function DropMenu({ isOpened, setIsOpened }) {
   const animateFrom = { opacity: 1, height: 0 };
   const animateTo = { opacity: 1, height: "100%" };
+
+  const closeMenu = () => {
+    setIsOpened(false);
+  };
 
   return (
     <AnimatePresence>
@@ -16,6 +21,7 @@ function DropMenu({ isOpened, setIsOpened }) {
           key="DropMenu"
           transition={{ ease: "easeOut", duration: 0.3 }}
           className={` bg-omnifood-tint_3 fixed top-0 left-0 right-0 h-screen  lg:hidden z-50`}
+          onClick={closeMenu}
         >
           <motion.div
             key="headDiv"
@@ -33,60 +39,76 @@ function DropMenu({ isOpened, setIsOpened }) {
               key="li1"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0 }}
+              exit={{ opacity: 0, transition: { duration: 0 } }}
               className=" inline-block "
             >
-              <motion.a
-                href="#"
-                className="   tracking-wide border-b-2 border-transparent hover:border-gray-700 transition-all cursor-pointer "
+              <ScrollLink
+                to="work"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={closeMenu}
               >
                 How it works
-              </motion.a>
+              </ScrollLink>
             </motion.li>
 
             <motion.li
               key="li2"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0 }}
+              exit={{ opacity: 0, transition: { duration: 0 } }}
               className=" inline-block  "
             >
-              <motion.a
-                href="#"
-                className="   tracking-wide border-b-2 border-transparent hover:border-gray-700 transition-all cursor-pointer"
+              <ScrollLink
+                to="meals"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={closeMenu}
               >
                 Meals
-              </motion.a>
+              </ScrollLink>
             </motion.li>
 
             <motion.li
               key="li3"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0 }}
+              exit={{ opacity: 0, transition: { duration: 0 } }}
               className=" inline-block "
             >
-              <motion.a
-                href="#"
-                className="   tracking-wide border-b-2 border-transparent hover:border-gray-700 transition-all cursor-pointer"
+              <ScrollLink
+                to="testimonials"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={closeMenu}
               >
                 Testimonials
-              </motion.a>
+              </ScrollLink>
             </motion.li>
 
             <motion.li
               key="li4"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0 }}
+              exit={{ opacity: 0, transition: { duration: 0 } }}
               className=" inline-block "
             >
-              <motion.a
-                href="#"
-                className="   tracking-wide border-b-2 border-transparent hover:border-gray-700 transition-all cursor-pointer"
+              <ScrollLink
+                to="pricing"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={closeMenu}
               >
                 Pricing
-              </motion.a>
+              </ScrollLink>
             </motion.li>
           </ul>
         </motion.div>

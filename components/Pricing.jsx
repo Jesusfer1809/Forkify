@@ -4,7 +4,10 @@ import Descriptions from "./Descriptions";
 
 function Pricing() {
   return (
-    <div className=" px-8 sz550:px-16 lg:px-20 xl:px-28 py-28 bg-white flex flex-col">
+    <div
+      id="pricing"
+      className=" px-4 sm:px-8  lg:px-20 xl:px-28 py-28 bg-white flex flex-col"
+    >
       <h2 className=" flex flex-col mb-20 ">
         <span className=" text-omnifood-shade_1 font-medium text-xs sm:text-sm xl:text-md block mb-3">
           PRICING

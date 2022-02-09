@@ -9,7 +9,7 @@ import {
 
 function Descriptions() {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-14">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-14">
       <div>
         <div className=" bg-omnifood-tint_1 w-16 h-16 flex justify-center items-center rounded-full mb-8">
           <InfiniteOutline color={"#e67e22"} height="2rem" width="2rem" />

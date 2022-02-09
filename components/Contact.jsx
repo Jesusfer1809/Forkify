@@ -2,9 +2,12 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className=" px-8 sz850:px-16 lg:px-20 xl:px-28 pt-16 pb-24 border-b-2 border-tg-g_555 border-opacity-10 ">
+    <div
+      id="try"
+      className=" px-4 sm:px-8 sz850:px-16 lg:px-20 xl:px-28 pt-16 pb-24 border-b-2 border-tg-g_555 border-opacity-10 "
+    >
       <div className="grid grid-cols-1 lg:grid-cols-3  bg-omnifood-tint_3 rounded-2xl overflow-hidden shadow-omnifood">
-        <div className=" col-span-1 lg:col-span-2 px-8 py-12 sm:px-14 sm:py-14">
+        <div className=" col-span-1 lg:col-span-2 px-4  py-12 sm:px-8 md:px-14 sm:py-14">
           <h2 className=" text-omnifood-shade_2 font-bold text-3xl md:text-4xl block mb-6  ">
             Get your first meal for free!
           </h2>
@@ -27,7 +30,7 @@ function Contact() {
                 type="text"
                 id="name"
                 placeholder="John Smith"
-                className="w-4/5 sm:w-full text-omnifood-shade_2 px-3 py-2 rounded-lg text-base md:text-lg tracking-wide  focus:outline-8 focus:outline-omnifood-tint_2 focus:border-none "
+                className=" w-full sm:w-4/5  text-omnifood-shade_2 px-3 py-2 rounded-lg text-base md:text-lg tracking-wide  focus:outline-8 focus:outline-omnifood-tint_2 focus:border-none "
               />
             </div>
 
@@ -42,7 +45,7 @@ function Contact() {
                 type="email"
                 id="email"
                 placeholder="John Smith"
-                className=" w-4/5 sm:w-full text-omnifood-shade_2  px-3 py-2 rounded-lg text-base md:text-lg tracking-wide  focus:outline-8 focus:outline-omnifood-tint_2 focus:border-none "
+                className=" w-full sm:w-4/5 text-omnifood-shade_2  px-3 py-2 rounded-lg text-base md:text-lg tracking-wide  focus:outline-8 focus:outline-omnifood-tint_2 focus:border-none "
               />
             </div>
 
@@ -55,7 +58,7 @@ function Contact() {
               </label>
               <select
                 id="hear"
-                className="w-4/5 sm:w-full text-omnifood-shade_2  px-3 py-2 rounded-lg text-base md:text-lg tracking-wide  focus:outline-8 focus:outline-omnifood-tint_2 focus:border-none "
+                className="w-full sm:w-4/5 text-omnifood-shade_2  px-3 py-2 rounded-lg text-base md:text-lg tracking-wide  focus:outline-8 focus:outline-omnifood-tint_2 focus:border-none "
               >
                 <option value="please">Please choose one option</option>
                 <option value="friends">Friends and family</option>
@@ -72,7 +75,7 @@ function Contact() {
               </label>
               <button
                 type="input"
-                className="w-4/5 sm:w-full text-white font-semibold bg-omnifood-shade_2 px-3 py-2 rounded-lg text-base md:text-lg tracking-wide hover:bg-white hover:text-tg-g_333 transition-all"
+                className="w-full sm:w-4/5 text-white font-semibold bg-omnifood-shade_2 px-3 py-2 rounded-lg text-base md:text-lg tracking-wide hover:bg-white hover:text-tg-g_333 transition-all"
                 onClick={(e) => e.preventDefault()}
               >
                 Sign up now

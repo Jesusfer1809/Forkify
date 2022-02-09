@@ -2,7 +2,10 @@ import React from "react";
 
 function Testimonials() {
   return (
-    <div className=" pl-8 sz550:pl-12 lg:pl-20 xl:pl-24 pr-8 py-24 sz950:py-16 xl:py-28 bg-omnifood-tint_1">
+    <div
+      id="testimonials"
+      className=" pl-4 sz500:pl-8 sm:pl-12 lg:pl-20 xl:pl-24 pr-4 sz500:pr-8 py-24 sz950:py-16 xl:py-28 bg-omnifood-tint_1"
+    >
       <div className="grid grid-cols-1 sz950:grid-cols-2 gap-x-20">
         <div className="self-center xl:self-start">
           <h2 className=" flex flex-col mb-20 ">
