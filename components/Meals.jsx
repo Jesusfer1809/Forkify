@@ -4,6 +4,8 @@ import Head from "next/head";
 import { FlameOutline, RestaurantOutline, StarOutline } from "react-ionicons";
 
 import Check from "./Check";
+import { animScrollProps } from "../utils/anim";
+import { motion } from "framer-motion";
 
 function Meals() {
   return (
@@ -11,16 +13,28 @@ function Meals() {
       id="meals"
       className=" px-8 sz550:px-16 lg:px-20 xl:px-28 py-16 bg-white"
     >
-      <h2 className=" flex flex-col text-center ">
+      <motion.h2
+        initial={animScrollProps.animInitial}
+        transition={animScrollProps.animTransition}
+        whileInView={animScrollProps.animWhileInView}
+        viewport={animScrollProps.animViewport}
+        className=" flex flex-col text-center "
+      >
         <span className=" text-omnifood-shade_1 font-medium text-xs sm:text-sm xl:text-md block mb-3">
           MEALS
         </span>
         <span className=" text-tg-g_333 font-semibold text-2xl sm:text-3xl xl:text-4xl block mb-24 xl:mb-28">
           Omnifood AI chooses from 5,000+ recipes
         </span>
-      </h2>
+      </motion.h2>
 
-      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-20">
+      <motion.div
+        initial={animScrollProps.animInitial}
+        transition={animScrollProps.animTransition}
+        whileInView={animScrollProps.animWhileInView}
+        viewport={animScrollProps.animViewport}
+        className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-20"
+      >
         <div className=" shadow-omnifood w-full sm:w-2/3 md:w-full justify-self-center  rounded-lg overflow-hidden">
           <img src="./meals/meal-1.jpg" />
 
@@ -155,7 +169,7 @@ function Meals() {
 
           <Check meal="Kid-friendly" />
         </div>
-      </div>
+      </motion.div>
 
       <div className="flex justify-center mt-14">
         <button className="inline-block text-omnifood-primary pb-1 border-b-2 border-omnifood-primary text-base md:text-lg hover:border-transparent hover:text-omnifood-shade_1 transition-all">

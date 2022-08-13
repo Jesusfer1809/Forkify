@@ -17,9 +17,13 @@ function DropMenu({ isOpened, setIsOpened }) {
         <motion.div
           initial={animateFrom}
           animate={animateTo}
-          exit={animateFrom}
+          exit={{
+            opacity: 1,
+            height: 0,
+            transition: { delay: 0.15, ease: "easeOut", duration: 0.5 },
+          }}
           key="DropMenu"
-          transition={{ ease: "easeOut", duration: 0.3 }}
+          transition={{ ease: "easeOut", duration: 0.5 }}
           className={` bg-omnifood-tint_3 fixed top-0 left-0 right-0 h-screen  lg:hidden z-50`}
           onClick={closeMenu}
         >
@@ -39,7 +43,12 @@ function DropMenu({ isOpened, setIsOpened }) {
               key="li1"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, transition: { duration: 0 } }}
+              transition={{ delay: 0.3, duration: 0.3 }}
+              exit={{
+                opacity: 0,
+                x: -100,
+                transition: { duration: 0.15, delay: 0.15, ease: "easeOut" },
+              }}
               className=" inline-block "
             >
               <ScrollLink
@@ -58,7 +67,12 @@ function DropMenu({ isOpened, setIsOpened }) {
               key="li2"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, transition: { duration: 0 } }}
+              transition={{ delay: 0.3, duration: 0.3 }}
+              exit={{
+                opacity: 0,
+                x: -100,
+                transition: { duration: 0.15, delay: 0.1, ease: "easeOut" },
+              }}
               className=" inline-block  "
             >
               <ScrollLink
@@ -77,7 +91,12 @@ function DropMenu({ isOpened, setIsOpened }) {
               key="li3"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, transition: { duration: 0 } }}
+              transition={{ delay: 0.3, duration: 0.3 }}
+              exit={{
+                opacity: 0,
+                x: -100,
+                transition: { duration: 0.15, delay: 0.05, ease: "easeOut" },
+              }}
               className=" inline-block "
             >
               <ScrollLink
@@ -96,7 +115,12 @@ function DropMenu({ isOpened, setIsOpened }) {
               key="li4"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, transition: { duration: 0 } }}
+              transition={{ delay: 0.3, duration: 0.3 }}
+              exit={{
+                opacity: 0,
+                x: -100,
+                transition: { duration: 0.15, delay: 0, ease: "easeOut" },
+              }}
               className=" inline-block "
             >
               <ScrollLink

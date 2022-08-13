@@ -1,4 +1,6 @@
 import React from "react";
+import { animScrollProps } from "../utils/anim";
+import { motion } from "framer-motion";
 
 function Testimonials() {
   return (
@@ -6,7 +8,13 @@ function Testimonials() {
       id="testimonials"
       className=" pl-4 sz500:pl-8 sm:pl-12 lg:pl-20 xl:pl-24 pr-4 sz500:pr-8 py-24 sz950:py-16 xl:py-28 bg-omnifood-tint_1"
     >
-      <div className="grid grid-cols-1 sz950:grid-cols-2 gap-x-20">
+      <motion.div
+        initial={animScrollProps.animInitial}
+        transition={animScrollProps.animTransition}
+        whileInView={animScrollProps.animWhileInView}
+        viewport={animScrollProps.animViewport}
+        className="grid grid-cols-1 sz950:grid-cols-2 gap-x-20"
+      >
         <div className="self-center xl:self-start">
           <h2 className=" flex flex-col mb-20 ">
             <span className=" text-omnifood-shade_1 font-medium text-xs sz550:text-sm lg:text-md block mb-3">
@@ -86,7 +94,7 @@ function Testimonials() {
           <img src="./gallery/gallery-11.jpg" />
           <img src="./gallery/gallery-12.jpg" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

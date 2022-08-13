@@ -1,4 +1,6 @@
 import React from "react";
+import { animScrollProps } from "../utils/anim";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
@@ -6,7 +8,13 @@ function Contact() {
       id="try"
       className=" px-4 sm:px-8 sz850:px-16 lg:px-20 xl:px-28 pt-16 pb-24 border-b-2 border-tg-g_555 border-opacity-10 "
     >
-      <div className="grid grid-cols-1 lg:grid-cols-3  bg-omnifood-tint_3 rounded-2xl overflow-hidden shadow-omnifood">
+      <motion.div
+        initial={animScrollProps.animInitial}
+        transition={animScrollProps.animTransition}
+        whileInView={animScrollProps.animWhileInView}
+        viewport={animScrollProps.animViewport}
+        className="grid grid-cols-1 lg:grid-cols-3  bg-omnifood-tint_3 rounded-2xl overflow-hidden shadow-omnifood"
+      >
         <div className=" col-span-1 lg:col-span-2 px-4  py-12 sm:px-8 md:px-14 sm:py-14">
           <h2 className=" text-omnifood-shade_2 font-bold text-3xl md:text-4xl block mb-6  ">
             Get your first meal for free!
@@ -93,7 +101,7 @@ function Contact() {
             backgroundSize: "cover",
           }}
         ></div>
-      </div>
+      </motion.div>
     </div>
   );
 }

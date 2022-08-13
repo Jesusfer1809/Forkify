@@ -6,13 +6,22 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { animScrollProps } from "../utils/anim";
+import { motion } from "framer-motion";
+
 function Footer() {
   const def = (e) => {
     e.preventDefault();
   };
 
   return (
-    <div className=" p-8 sz850:p-16 lg:p-20 xl:p-28  ">
+    <motion.div
+      initial={animScrollProps.animInitial}
+      transition={animScrollProps.animTransition}
+      whileInView={animScrollProps.animWhileInView}
+      viewport={animScrollProps.animViewport}
+      className=" p-8 sz850:p-16 lg:p-20 xl:p-28  "
+    >
       <div className="grid grid-cols-1 sm:grid-cols-2 sz500:grid-cols-6 lg:grid-cols-[2fr_2fr_1fr_1fr_1fr] gap-y-24 gap-x-8 lg:gap-16 text-tg-g_6f6f6f">
         <div className=" col-span-1 sz500:col-span-3 lg:col-span-1">
           <img src="./omnifood-logo.png" className=" w-2/5 lg:w-4/5" />
@@ -111,7 +120,7 @@ function Footer() {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,18 +1,34 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
     <div className="grid grid-cols-1 pt-[10rem]  text-center lg:grid-cols-2 lg:text-left px-4 sz500:px-8 sm:px-16 gap-20 xl:gap-24  py-20 bg-omnifood-tint_1">
       <div>
-        <h1 className=" font-bold tracking-normal xl:tracking-wide leading-tight block mb-12 font-rubik text-3xl sz550:text-4xl lg:text-5xl  text-tg-g_333">
+        <motion.h1
+          initial={{ translateY: 10, opacity: 0 }}
+          animate={{ translateY: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+          className=" font-bold tracking-normal xl:tracking-wide leading-tight block mb-12 font-rubik text-3xl sz550:text-4xl lg:text-5xl  text-tg-g_333"
+        >
           A healthy meal delivered to your door, every single day
-        </h1>
-        <p className=" text-tg-g_555 text-base sz550:text-lg xl:text-xl leading-relaxed block mb-8">
+        </motion.h1>
+        <motion.p
+          initial={{ translateY: 10, opacity: 0 }}
+          animate={{ translateY: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+          className=" text-tg-g_555 text-base sz550:text-lg xl:text-xl leading-relaxed block mb-8"
+        >
           The smart 365-days-per-year food subscription that will make you eat
           healthy again. Tailored to your personal tastes and nutritional needs.
-        </p>
+        </motion.p>
 
-        <div className="flex mb-20 justify-center lg:justify-left">
+        <motion.div
+          initial={{ translateY: 10, opacity: 0 }}
+          animate={{ translateY: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+          className="flex mb-20 justify-center lg:justify-left"
+        >
           <a
             href="#"
             className=" py-1 px-2  sz550:py-2 sz550:px-6 xl:py-3 xl:px-8 text-base leading-loose sz550:text-lg xl:text-xl font-semibold border-2 border-omnifood-primary text-white bg-omnifood-primary  rounded-lg inline-block mr-8 hover:bg-omnifood-shade_1 hover:border-omnifood-shade_1 transition-all"
@@ -26,7 +42,7 @@ function Hero() {
           >
             Learn more &darr;
           </a>
-        </div>
+        </motion.div>
 
         <div className="flex flex-row  gap-12  items-center justify-center flex-wrap lg:items-start lg:flex-col lg:gap-4 sz1275:flex-row  ">
           <div className="flex flex-wrap  ">

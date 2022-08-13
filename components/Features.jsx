@@ -1,8 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { animScrollProps } from "../utils/anim";
 
 function Features() {
   return (
-    <div className=" px-8 sz550:px-16 md:px-20 lg:px-28 pt-16 pb-8 xl:pb-16 bg-white">
+    <motion.div
+      initial={animScrollProps.animInitial}
+      transition={animScrollProps.animTransition}
+      whileInView={animScrollProps.animWhileInView}
+      viewport={animScrollProps.animViewport}
+      className=" px-8 sz550:px-16 md:px-20 lg:px-28 pt-16 pb-8 xl:pb-16 bg-white"
+    >
       <h2 className="block text-sm font-medium text-center text-tg-g_6f6f6f mb-6">
         AS FEATURED IN
       </h2>
@@ -28,7 +36,7 @@ function Features() {
           className=" h-6 md:h-8 invert-[.45] sepia-[.14] saturate-[.12] hue-rotate-[314deg] brightness-[.92] contrast-[.83]"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
