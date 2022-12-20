@@ -1,6 +1,7 @@
 import React from "react";
-import { animScrollProps } from "../utils/anim";
+
 import { motion } from "framer-motion";
+import { animScrollProps } from "utils/anim";
 
 function Steps() {
   return (

@@ -1,9 +1,8 @@
 import { AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
-import DeskLinks from "./DeskLinks";
-import DropMenu from "./DropMenu";
-
-import MobileLinks from "./MobileLinks";
+import DeskLinks from "components/pieces/DeskLinks";
+import DropMenu from "components/pieces/DropMenu";
+import MobileLinks from "components/pieces/MobileLinks";
 
 function Navbar() {
   const [isOpened, setIsOpened] = useState(false);

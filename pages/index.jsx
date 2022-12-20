@@ -1,13 +1,13 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Features from "../components/Features";
-import Steps from "../components/Steps";
-import Meals from "../components/Meals";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import Navbar from "components/sections/Navbar";
+import Hero from "components/sections/Hero";
+import Features from "components/sections/Features";
+import Steps from "components/sections/Steps";
+import Meals from "components/sections/Meals";
+import Testimonials from "components/sections/Testimonials";
+import Pricing from "components/sections/Pricing";
+import Contact from "components/sections/Contact";
+import Footer from "components/sections/Footer";
 
 export default function Home() {
   return (

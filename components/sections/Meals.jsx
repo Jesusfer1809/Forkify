@@ -6,9 +6,9 @@ import {
   IoStarOutline,
 } from "react-icons/io5";
 
-import Check from "./Check";
-import { animScrollProps } from "../utils/anim";
 import { motion } from "framer-motion";
+import { animScrollProps } from "utils/anim";
+import Check from "components/pieces/Check";
 
 function Meals() {
   return (

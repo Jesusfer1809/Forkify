@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../styles/hamburguer.module.css";
+import styles from "styles/hamburguer.module.css";
 
 function HamburguerButton({ isOpened }) {
   return (

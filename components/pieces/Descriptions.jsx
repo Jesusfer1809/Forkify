@@ -7,8 +7,8 @@ import {
   IoInfiniteOutline,
 } from "react-icons/io5";
 
-import { animScrollProps } from "../utils/anim";
 import { motion } from "framer-motion";
+import { animScrollProps } from "utils/anim";
 
 function Descriptions() {
   return (

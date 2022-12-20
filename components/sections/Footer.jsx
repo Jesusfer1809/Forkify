@@ -6,8 +6,8 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 
-import { animScrollProps } from "../utils/anim";
 import { motion } from "framer-motion";
+import { animScrollProps } from "utils/anim";
 
 function Footer() {
   const def = (e) => {

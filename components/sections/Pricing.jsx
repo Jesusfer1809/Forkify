@@ -1,10 +1,10 @@
 import React from "react";
-import Check from "./Check";
-import Descriptions from "./Descriptions";
+import Check from "components/pieces/Check";
+import Descriptions from "components/pieces/Descriptions";
 
-import { animScrollProps } from "../utils/anim";
 import { motion } from "framer-motion";
 import { HiOutlineX } from "react-icons/hi";
+import { animScrollProps } from "utils/anim";
 
 function Pricing() {
   return (
