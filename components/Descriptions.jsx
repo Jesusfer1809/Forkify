@@ -1,11 +1,11 @@
 import React from "react";
 
 import {
-  InfiniteOutline,
-  NutritionOutline,
-  LeafOutline,
-  PauseOutline,
-} from "react-ionicons";
+  IoNutritionOutline,
+  IoLeafOutline,
+  IoPauseOutline,
+  IoInfiniteOutline,
+} from "react-icons/io5";
 
 import { animScrollProps } from "../utils/anim";
 import { motion } from "framer-motion";
@@ -21,7 +21,7 @@ function Descriptions() {
     >
       <div>
         <div className=" bg-omnifood-tint_1 w-16 h-16 flex justify-center items-center rounded-full mb-8">
-          <InfiniteOutline color={"#e67e22"} height="2rem" width="2rem" />
+          <IoInfiniteOutline className="text-omnifood-primary h-8 w-8" />
         </div>
 
         <h4 className="font-bold text-xl sm:text-2xl block mb-2 text-tg-g_333">
@@ -36,7 +36,7 @@ function Descriptions() {
 
       <div>
         <div className=" bg-omnifood-tint_1 w-16 h-16 flex justify-center items-center rounded-full mb-8">
-          <NutritionOutline color={"#e67e22"} height="2rem" width="2rem" />
+          <IoNutritionOutline className="text-omnifood-primary h-8 w-8" />
         </div>
 
         <h4 className="font-bold text-xl sm:text-2xl block mb-2 text-tg-g_333">
@@ -51,7 +51,7 @@ function Descriptions() {
 
       <div>
         <div className=" bg-omnifood-tint_1 w-16 h-16 flex justify-center items-center rounded-full mb-8">
-          <LeafOutline color={"#e67e22"} height="2rem" width="2rem" />
+          <IoLeafOutline className="text-omnifood-primary h-8 w-8" />
         </div>
 
         <h4 className="font-bold text-xl sm:text-2xl block mb-2 text-tg-g_333">
@@ -66,7 +66,7 @@ function Descriptions() {
 
       <div>
         <div className=" bg-omnifood-tint_1 w-16 h-16 flex justify-center items-center rounded-full mb-8">
-          <PauseOutline color={"#e67e22"} height="2rem" width="2rem" />
+          <IoPauseOutline className="text-omnifood-primary h-8 w-8" />
         </div>
 
         <h4 className="font-bold text-xl sm:text-2xl block mb-2 text-tg-g_333">

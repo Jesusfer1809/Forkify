@@ -1,7 +1,10 @@
 import React from "react";
-import Head from "next/head";
 
-import { FlameOutline, RestaurantOutline, StarOutline } from "react-ionicons";
+import {
+  IoFlameOutline,
+  IoRestaurantOutline,
+  IoStarOutline,
+} from "react-icons/io5";
 
 import Check from "./Check";
 import { animScrollProps } from "../utils/anim";
@@ -48,11 +51,7 @@ function Meals() {
 
             <div className="text-omnifood-primary flex mb-8">
               <div className="mr-6 flex items-center justify-center">
-                <FlameOutline
-                  color={"#e67e22"}
-                  height="1.75rem"
-                  width="1.75rem"
-                />
+                <IoFlameOutline className="text-omnifood-primary w-7 h-7" />
               </div>
 
               <span className=" text-tg-g_555 text-lg">
@@ -62,11 +61,7 @@ function Meals() {
 
             <div className="text-omnifood-primary flex mb-8">
               <div className="mr-6 flex items-center justify-center">
-                <RestaurantOutline
-                  color={"#e67e22"}
-                  height="1.75rem"
-                  width="1.75rem"
-                />
+                <IoRestaurantOutline className="text-omnifood-primary w-7 h-7" />
               </div>
               <span className=" text-tg-g_555 text-lg">
                 Nutriscore &reg;<span className="font-semibold"> 74</span>
@@ -75,11 +70,7 @@ function Meals() {
 
             <div className="text-omnifood-primary flex mb-8">
               <div className="mr-6 flex items-center justify-center">
-                <StarOutline
-                  color={"#e67e22"}
-                  height="1.75rem"
-                  width="1.75rem"
-                />
+                <IoStarOutline className="text-omnifood-primary w-7 h-7" />
               </div>
               <span className=" text-tg-g_555 text-lg">
                 <span className="font-semibold">4.9</span> rating (537)
@@ -106,11 +97,7 @@ function Meals() {
 
             <div className="text-omnifood-primary flex mb-8">
               <div className="mr-6 flex items-center justify-center">
-                <FlameOutline
-                  color={"#e67e22"}
-                  height="1.75rem"
-                  width="1.75rem"
-                />
+                <IoFlameOutline className="text-omnifood-primary w-7 h-7" />
               </div>
 
               <span className=" text-tg-g_555 text-lg">
@@ -120,11 +107,7 @@ function Meals() {
 
             <div className="text-omnifood-primary flex mb-8">
               <div className="mr-6 flex items-center justify-center">
-                <RestaurantOutline
-                  color={"#e67e22"}
-                  height="1.75rem"
-                  width="1.75rem"
-                />
+                <IoRestaurantOutline className="text-omnifood-primary w-7 h-7" />
               </div>
               <span className=" text-tg-g_555 text-lg">
                 Nutriscore &reg;<span className="font-semibold"> 92</span>
@@ -133,11 +116,7 @@ function Meals() {
 
             <div className="text-omnifood-primary flex mb-8">
               <div className="mr-6 flex items-center justify-center">
-                <StarOutline
-                  color={"#e67e22"}
-                  height="1.75rem"
-                  width="1.75rem"
-                />
+                <IoStarOutline className="text-omnifood-primary w-7 h-7" />
               </div>
               <span className=" text-tg-g_555 text-lg">
                 <span className="font-semibold">4.8</span> rating (441)

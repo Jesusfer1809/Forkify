@@ -6,27 +6,21 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
     "core-js": "^3.20.3",
-    "framer-motion": "^6.2.3",
-    "next": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-ionicons": "^4.2.0",
+    "framer-motion": "^7.10.3",
+    "next": "12.3.4",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
     "react-scroll": "^1.8.4",
     "resolve-url": "^0.2.1",
     "tailwind-scrollbar-hide": "^1.1.7",
     "urix": "^0.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.4",
+    "autoprefixer": "10.4.13",
+    "postcss": "8.4.19",
     "tailwind-scrollbar": "^1.3.1",
-    "tailwindcss": "^3.0.0"
+    "tailwindcss": "3.2.4"
   }
 }

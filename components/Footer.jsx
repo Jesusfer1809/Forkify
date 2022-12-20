@@ -1,10 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
-  faInstagram,
-  faTwitter,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
+  AiOutlineInstagram,
+  AiFillFacebook,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 
 import { animScrollProps } from "../utils/anim";
 import { motion } from "framer-motion";
@@ -27,15 +27,15 @@ function Footer() {
           <img src="./omnifood-logo.png" className=" w-2/5 lg:w-4/5" />
           <div className="mt-8 mb-20 flex">
             <div className="mr-8 ">
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
+              <AiOutlineInstagram className="w-7 h-7" />
             </div>
 
             <div className="mr-8">
-              <FontAwesomeIcon icon={faFacebook} size="lg" />
+              <AiFillFacebook className="w-7 h-7" />
             </div>
 
             <div className="mr-8">
-              <FontAwesomeIcon icon={faTwitter} size="lg" />
+              <AiOutlineTwitter className="w-7 h-7" />
             </div>
           </div>
 
