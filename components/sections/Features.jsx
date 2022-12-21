@@ -1,8 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animScrollProps } from "utils/anim";
+import Image from "next/image";
 
 function Features() {
+  const featureLogos = [
+    "/logos/techcrunch.png",
+    "/logos/business-insider.png",
+    "/logos/the-new-york-times.png",
+    "/logos/forbes.png",
+    "/logos/usa-today.png",
+  ];
+
   return (
     <motion.div
       initial={animScrollProps.animInitial}
@@ -15,26 +24,12 @@ function Features() {
         AS FEATURED IN
       </h2>
       <div className=" flex justify-around flex-wrap gap-6 md:gap-8 ">
-        <img
-          src="./logos/techcrunch.png"
-          className=" h-6 md:h-8 invert-[.45] sepia-[.14] saturate-[.12] hue-rotate-[314deg] brightness-[.92] contrast-[.83]"
-        />
-        <img
-          src="./logos/business-insider.png"
-          className=" h-6 md:h-8 invert-[.45] sepia-[.14] saturate-[.12] hue-rotate-[314deg] brightness-[.92] contrast-[.83]"
-        />
-        <img
-          src="./logos/the-new-york-times.png"
-          className=" h-6 md:h-8 invert-[.45] sepia-[.14] saturate-[.12] hue-rotate-[314deg] brightness-[.92] contrast-[.83]"
-        />
-        <img
-          src="./logos/forbes.png"
-          className=" h-6 md:h-8 invert-[.45] sepia-[.14] saturate-[.12] hue-rotate-[314deg] brightness-[.92] contrast-[.83]"
-        />
-        <img
-          src="./logos/usa-today.png"
-          className=" h-6 md:h-8 invert-[.45] sepia-[.14] saturate-[.12] hue-rotate-[314deg] brightness-[.92] contrast-[.83]"
-        />
+        {featureLogos.map((url) => (
+          <img
+            src={url}
+            className=" h-6 md:h-8 invert-[.45] sepia-[.14] saturate-[.12] hue-rotate-[314deg] brightness-[.92] contrast-[.83]"
+          />
+        ))}
       </div>
     </motion.div>
   );

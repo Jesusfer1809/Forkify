@@ -1,7 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function Hero() {
+  const renderImages = () => {
+    const arr = new Array(6).fill(1);
+
+    return arr.map((_, i) => (
+      <div className="relative h-12 w-12 rounded-full -mr-4 border-2 border-white overflow-hidden">
+        <Image src={`/customers/customer-${i + 1}.jpg`} layout="fill" />
+      </div>
+    ));
+  };
+
   return (
     <div className="grid grid-cols-1 pt-[10rem]  text-center lg:grid-cols-2 lg:text-left px-4 sz500:px-8 sm:px-16 gap-20 xl:gap-24  py-20 bg-omnifood-tint_1">
       <div>
@@ -45,32 +56,7 @@ function Hero() {
         </motion.div>
 
         <div className="flex flex-row  gap-12  items-center justify-center flex-wrap lg:items-start lg:flex-col lg:gap-4 sz1275:flex-row  ">
-          <div className="flex flex-wrap  ">
-            <img
-              src="./customers/customer-1.jpg"
-              className=" h-12 rounded-full -mr-4 border-2 border-white"
-            />
-            <img
-              src="./customers/customer-2.jpg"
-              className=" h-12 rounded-full -mr-4 border-2 border-white"
-            />
-            <img
-              src="./customers/customer-3.jpg"
-              className=" h-12 rounded-full -mr-4 border-2 border-white"
-            />
-            <img
-              src="./customers/customer-4.jpg"
-              className=" h-12 rounded-full -mr-4 border-2 border-white"
-            />
-            <img
-              src="./customers/customer-5.jpg"
-              className=" h-12 rounded-full -mr-4 border-2 border-white"
-            />
-            <img
-              src="./customers/customer-6.jpg"
-              className=" h-12 rounded-full -mr-4 border-2 border-white "
-            />
-          </div>
+          <div className="flex flex-wrap  ">{renderImages()}</div>
 
           <div className=" text-tg-g_555 text-lg font-semibold">
             <span className="text-omnifood-shade_1">250,000+</span> meals
