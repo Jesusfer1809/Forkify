@@ -2,7 +2,7 @@
 
 **The landing page of Omnifood. I tried to make a pixel-perfect clone for the page made in Jonas Schmedtmann's course using Tailwind**
 
-**Click here to see the live demo &rarr;** [Omnifood site](https://omnifood-snowy.vercel.app "Omnifood site")
+**Click here to see the live demo &rarr;** [Omnifood site](https://jesusfer1809-omnifood.vercel.app/ "Omnifood site")
 
 ![](https://i.imgur.com/ndfsfXN.jpg)
 
