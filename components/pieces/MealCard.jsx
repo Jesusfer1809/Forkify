@@ -14,7 +14,8 @@ function MealCard({ meal }) {
         <div className="flex space-x-2 mb-4">
           {meal.mealTypes.map((mealType) => (
             <span
-              className={`text-xs uppercase font-semibold bg-[${mealType.color}] px-3 py-1 rounded-full inline-block mb-3 xl:mb-2`}
+              className={`text-xs uppercase font-semibold  px-3 py-1 rounded-full inline-block mb-3 xl:mb-2`}
+              style={{ backgroundColor: mealType.color }}
             >
               {mealType.name}
             </span>
