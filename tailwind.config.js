@@ -18,7 +18,7 @@ module.exports = {
       sz950: "950px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1536px",
+      "2xl": "1400px",
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
